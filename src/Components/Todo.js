@@ -145,11 +145,14 @@ export const Todo = () => {
             })}
           </div>
         </div>
-          <div className="remove-btn">
+
+
+            { (items === undefined) ? ( console.log("no items in list")):( <div className="remove-btn">
             <button className="btn" onClick={removeAll}>
               Remove All
             </button>
-          </div>
+          </div>)
+          }
       </div>
     </>
   );
